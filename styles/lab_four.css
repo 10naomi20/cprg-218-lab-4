@@ -1,0 +1,168 @@
+.body {
+    font-family: "PT Sans", sans-serif;
+}
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bullet-train.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+
+} 
+
+.content-container{
+    background-color: unset;
+    height: inherit;
+} 
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.c-message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-message button {
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    background-color: #eee;
+    color: #444;
+}
+
+.c-message button:hover {
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.c-image img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 3px;
+    
+}
+
+.accordion-container {
+    background-color: unset;
+    height: unset;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+.footer-container {
+    background-color: black; 
+    height: unset;
+    color: white;
+}
+.f-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+}
+
+.f-message {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.f-icons {
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.f-message a {
+    color: white;
+    text-decoration: none;
+}
+
+.f-copyright {
+    margin: auto;
+}
+
+.f-map {
+    width: 50%;
+    margin: auto;
+}
+
+
+/*
+    Screen less than 1200px
+
+    - Adjust the content section so that the image is above the message
+    - Hide the map, and maximize the width of the footer information
+*/
+@media ( width <= 1200px) {
+    .content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .f-message {
+        width: 100%;
+    }
+
+    .f-wrapper {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .f-map {
+        display: none;
+    }
+}
+
+/**
+    Screen less than 400px
+
+    - Hide the image in the content section
+    - Turn the information in the footer into 1 column display
+
+**/
+
+@media ( width <= 400px) {
+    .c-image {
+        display: none;
+    }
+
+    .f-message {
+        width: 100%;
+        flex-direction: column;
+    }
+
+}

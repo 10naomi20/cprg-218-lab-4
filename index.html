@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="./styles/global.css">
+  <link rel="stylesheet" type="text/css" href="./styles/lab_four_starter.css">
+
+  <script src="https://kit.fontawesome.com/48fd386c8d.js" crossorigin="anonymous"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=M+PLUS+Rounded+1c:wght@300&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./styles/lab_four.css">
+
+  <script src="./scripts/lab_four.js" defer></script>
+
+
+  <title>Common Website Features</title>
+</head>
+<body>
+
+  <section class="hero-container">
+    <div class="hero-img">
+      <div class="hero-text">
+        <h1>This is Tokyo</h1>
+        <p>ようこそ東京へ!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container content-container">
+    <div class="content">
+      <div class="c-message">
+        <h1>Senso-ji Temple</h1>
+        <p>An iconic tourist destination in Tokyo, Senso-ji...</p>
+        <button onclick="openAccordion('sensoji')"> See More</button>
+      </div>
+      <div class="c-image">
+        <img src="./assets/bridge.jpg"/>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="c-message">
+        <h1>Japanese Cuisine</h1>
+        <p>Globally acclaimed for its fresh ingredients and...</p>
+        <button onclick="openAccordion('cuisine')"> See More</button>
+      </div>
+      <div class="c-image">
+        <img src="./assets/cuisine.jpg"/>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="c-message">
+        <h1>Art Exhibition</h1>
+        <p> Known for art installations that utilize digital ...</p>
+        <button onclick="openAccordion('art')"> See More</button>
+      </div>
+      <div class="c-image">
+        <img src="./assets/art.jpg"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="container accordion-container">
+    <details id="sensoji" class="accordion">
+      <summary>Senso-ji Temple</summary>
+      <p>
+        An iconic tourist destination in Tokyo, Senso-ji is a historic temple that 
+        offers a glimpse into Japan's rich traditions and culture. Famous for
+        its Kaminarimon Gate and giant lantern, visitors can stroll through 
+        the temple grounds and enjoy traditional shops and food stalls.
+      </p>
+    </details>
+    <details id="cuisine" class="accordion">
+      <summary>Japanese Cuisine</summary>
+      <p>
+        Globally acclaimed for its fresh ingredients and exquisite flavors,
+         Japanese cuisine features a diverse menu including sushi, tempura, and ramen. 
+         Each region of Japan offers unique culinary experiences, showcasing the country's varied food culture.
+      </p>
+    </details>
+    <details id="art" class="accordion">
+      <summary>Art Exhibition</summary>
+      <p>
+        Known for art installations that utilize digital technology, teamLab captivates visitors with
+         interactive exhibits and grandiose light installations. 
+         In this futuristic art space, you can experience a fantastical world of light and sound.
+      </p>  
+    </details>
+  </section>
+
+  <section class="footer-container">
+   <div class="f-wrapper">
+      <div class="f-message">
+        <div class="f-info">
+            <h2>Information</h2>
+            <p>
+              Change information
+            </p>
+            <h2>Social Media</h2>
+            <p class="f-icons">
+              <i class="fa-brands fa-airbnb"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-envelope"></i>
+            </p>
+        </div>
+        <div class="f-links">
+            <h2>Links</h2>
+            <p>
+              <a href="#">Privacy Policy</a> 
+              <i class="fa-solid fa-chevron-right"></i>
+            </p>
+            <p>
+              <a href="#">Terms of Use</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </p>
+            <p>
+              <a href="#">Accessibility</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </p>
+        </div>
+      </div>
+      <div class="f-map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1LffNxpYhF2ixp5lRIKPQ3hJocq0&hl=en_US&ehbc=2E312F" 
+        width="640" 
+        height="250"></iframe>
+        
+      </div>
+    </div>
+    <div class="f-wrapper">
+        <div class="f-copyright">
+          Copyright &#169; <span id="year"></span> Naomi Kagami
+        </div>
+    </div>
+  </section>
+</body>
+</html>
